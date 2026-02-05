@@ -28,7 +28,7 @@ const Navbar = () => {
                 to="/"
                 className="text-2xl font-black tracking-tight cursor-pointer text-black hover:text-gray-700 transition-colors"
             >
-                TIXX AGENCY
+                TIXX Connect
             </Link>
             <div className="flex space-x-8 text-sm font-semibold tracking-wide">
                 {['AGENCY', 'SERVICE', 'CONTACT'].map((item) => {
