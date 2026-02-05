@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import ProgramPreview from '../components/ProgramPreview';
 import { motion } from 'framer-motion';
-import { Search, Globe, MapPin, CheckCircle, Filter, LucideIcon } from 'lucide-react';
+import { Globe, MapPin, CheckCircle, LucideIcon } from 'lucide-react';
 
 interface ServiceTabProps {
     active: boolean;
@@ -88,30 +89,8 @@ const Service = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="order-1 lg:order-2 bg-white rounded-3xl p-8 border border-gray-100 shadow-xl relative overflow-hidden h-[600px] flex flex-col">
-                                {/* Dashboard Mockup */}
-                                <div className="absolute top-0 left-0 right-0 h-1 bg-accent"></div>
-                                <div className="flex justify-between items-center mb-8 border-b border-gray-200 pb-4">
-                                    <div className="font-bold text-lg">TIXX Influencer Hub</div>
-                                    <div className="bg-black text-white text-xs px-3 py-1 rounded-full">Admin View</div>
-                                </div>
-                                <div className="flex gap-2 mb-4 overflow-x-auto">
-                                    {["Fashion", "Beauty", "Lifestyle", "Tech"].map(tag => (
-                                        <span key={tag} className="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-bold text-gray-600 whitespace-nowrap">{tag}</span>
-                                    ))}
-                                </div>
-                                <div className="flex-1 overflow-y-auto space-y-4 pr-2">
-                                    {[1, 2, 3, 4, 5].map(i => (
-                                        <div key={i} className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-4 hover:shadow-md transition-shadow">
-                                            <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
-                                            <div className="flex-1">
-                                                <div className="w-24 h-4 bg-gray-100 rounded mb-2"></div>
-                                                <div className="w-16 h-3 bg-gray-50 rounded"></div>
-                                            </div>
-                                            <button className="px-4 py-2 bg-black text-white text-xs rounded-lg font-bold">Select</button>
-                                        </div>
-                                    ))}
-                                </div>
+                            <div className="order-1 lg:order-2">
+                                <ProgramPreview type="influencer" />
                             </div>
                         </>
                     ) : (
@@ -142,31 +121,8 @@ const Service = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="order-1 lg:order-2 bg-white rounded-3xl p-0 border border-gray-100 shadow-xl relative overflow-hidden h-[600px]">
-                                {/* Map/Venue Mockup */}
-                                <div className="absolute inset-0 bg-gray-100 opacity-50 bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:20px_20px]"></div>
-
-                                {[1, 2, 3].map(i => (
-                                    <div key={i} className="absolute p-2 bg-white rounded-lg shadow-lg flex items-center gap-2 transform hover:scale-110 transition-transform cursor-pointer group"
-                                        style={{ top: `${20 + i * 25}%`, left: `${30 + (i % 2) * 30}%` }}>
-                                        <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-accent">
-                                            <MapPin size={16} fill="#f2f762" />
-                                        </div>
-                                        <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded whitespace-nowrap">
-                                            Capacity: 200+
-                                        </div>
-                                    </div>
-                                ))}
-
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-gray-100">
-                                    <div className="flex items-center gap-3">
-                                        <Search className="text-gray-400" size={20} />
-                                        <input type="text" placeholder="Gangnam, Lounge Bar, 100 people" className="bg-transparent w-full outline-none text-sm font-medium" disabled />
-                                        <div className="p-2 bg-accent rounded-lg">
-                                            <Filter size={16} className="text-black" />
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="order-1 lg:order-2">
+                                <ProgramPreview type="venue" />
                             </div>
                         </>
                     )}
