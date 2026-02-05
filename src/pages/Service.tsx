@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ProgramPreview from '../components/ProgramPreview';
+import ServicePlans from '../components/ServicePlans';
 import { motion } from 'framer-motion';
 import { Globe, MapPin, CheckCircle, LucideIcon } from 'lucide-react';
 
@@ -128,6 +129,8 @@ const Service = () => {
                     )}
                 </motion.div>
             </div>
+
+            <ServicePlans />
         </div>
     );
 };
