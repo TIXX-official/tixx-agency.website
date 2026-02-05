@@ -26,6 +26,7 @@ const Navbar = () => {
         >
             <Link
                 to="/"
+                className="text-2xl font-black tracking-tight cursor-pointer text-black hover:text-gray-700 transition-colors"
             >
                 TIXX AGENCY
             </Link>
