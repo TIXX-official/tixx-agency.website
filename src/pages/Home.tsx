@@ -17,7 +17,7 @@ const Home = () => {
                 className="z-10 max-w-5xl mb-20"
             >
                 <span className="inline-block py-1 px-3 rounded-full bg-gray-100 border border-gray-200 text-gray-800 text-xs font-bold mb-6 tracking-widest uppercase">
-                    TIXX Agency
+                    TIXX Connect
                 </span>
                 <h1 className="text-6xl md:text-[7rem] font-bold leading-[0.9] tracking-tight text-black mb-8">
                     Creative Minds, <br />
@@ -53,7 +53,7 @@ const Home = () => {
                 <div className="flex justify-between items-end mb-12 border-b border-gray-200 pb-4">
                     <div>
                         <span className="text-accent font-bold tracking-widest text-sm uppercase">Who We Are</span>
-                        <h2 className="text-3xl md:text-5xl font-bold mt-2">TIXX Agency</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold mt-2">TIXX Connect</h2>
                     </div>
                     <Link to="/agency" className="text-sm font-bold border-b border-black pb-1 hover:text-gray-600 hover:border-gray-400 transition-colors">
                         더 보기
