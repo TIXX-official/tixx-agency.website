@@ -1,8 +1,15 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Sparkles, TrendingUp, Smartphone, Database, Zap } from 'lucide-react';
+import { Code, Sparkles, TrendingUp, Smartphone, Database, Zap, LucideIcon } from 'lucide-react';
 
-const TeamCard = ({ icon: Icon, title, description, details, delay }) => (
+interface TeamCardProps {
+    icon: LucideIcon;
+    title: string;
+    description: string;
+    details: string[];
+    delay: number;
+}
+
+const TeamCard = ({ icon: Icon, title, description, details, delay }: TeamCardProps) => (
     <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

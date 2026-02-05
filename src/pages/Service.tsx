@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Globe, MapPin, CheckCircle, ArrowRight, Star, Filter } from 'lucide-react';
+import { Search, Globe, MapPin, CheckCircle, Filter, LucideIcon } from 'lucide-react';
 
-const ServiceTab = ({ active, onClick, icon: Icon, label }) => (
+interface ServiceTabProps {
+    active: boolean;
+    onClick: () => void;
+    icon: LucideIcon;
+    label: string;
+}
+
+const ServiceTab = ({ active, onClick, icon: Icon, label }: ServiceTabProps) => (
     <button
         onClick={onClick}
         className={`flex-1 py-6 text-center text-lg font-bold flex items-center justify-center gap-3 transition-all duration-300 relative ${active ? 'text-black' : 'text-gray-400 hover:text-gray-600'
