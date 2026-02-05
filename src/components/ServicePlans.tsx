@@ -6,17 +6,18 @@ const ServicePlans = () => {
     return (
         <div className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-8 md:px-12 relative z-10">
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 md:mb-20">
                     <span className="text-accent font-bold tracking-widest text-sm uppercase mb-4 block">Our Solutions</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">TIXX Connect Plans</h2>
-                    <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-                        스타트업부터 대기업까지, 브랜드의 규모와 목표에 맞는<br />최적의 마케팅 솔루션을 제안합니다.
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">TIXX Connect Plans</h2>
+                    <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto px-4">
+                        스타트업부터 대기업까지, 브랜드의 규모와 목표에 맞는<br className="hidden md:block" />
+                        최적의 마케팅 솔루션을 제안합니다.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-8">
                     {/* PLAN 01: CONNECT PASS */}
-                    <div className="bg-[#f9fafb] rounded-3xl p-8 md:p-12 border border-gray-100 flex flex-col lg:flex-row gap-12 group hover:border-black/10 transition-colors">
+                    <div className="bg-[#f9fafb] rounded-3xl p-6 md:p-12 border border-gray-100 flex flex-col lg:flex-row gap-8 md:gap-12 group hover:border-black/10 transition-colors">
                         <div className="flex-1">
                             <div className="flex items-center gap-4 mb-6">
                                 <span className="text-5xl font-black text-gray-200">01</span>
@@ -25,8 +26,8 @@ const ServicePlans = () => {
                                     <span className="text-sm font-bold text-gray-400">Web App Subscription</span>
                                 </div>
                             </div>
-                            <p className="text-xl font-bold mb-4">"마케터가 직접 찾는, 가장 투명하고 스마트한 인플루언서/베뉴 서칭 솔루션"</p>
-                            <p className="text-gray-600 mb-8 leading-relaxed">
+                            <p className="text-lg md:text-xl font-bold mb-4">"마케터가 직접 찾는, 가장 투명하고 스마트한 인플루언서/베뉴 서칭 솔루션"</p>
+                            <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 leading-relaxed">
                                 틱스 커넥트 웹앱(SaaS)을 이용해 직접 디깅하고 컨택하는 구독형 서비스입니다.<br />
                                 <span className="text-sm text-gray-400 mt-2 block">Target: 직접 섭외를 선호하는 인하우스 마케터, 가성비와 속도가 중요한 스타트업.</span>
                             </p>
@@ -89,18 +90,18 @@ const ServicePlans = () => {
                     </div>
 
                     {/* PLAN 02: PERFORMANCE CAMPAIGN */}
-                    <div className="bg-black text-white rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row gap-12 group relative overflow-hidden">
+                    <div className="bg-black text-white rounded-3xl p-6 md:p-12 flex flex-col lg:flex-row gap-8 md:gap-12 group relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gray-800 via-black to-black opacity-50"></div>
                         <div className="flex-1 relative z-10">
                             <div className="flex items-center gap-4 mb-6">
-                                <span className="text-5xl font-black text-gray-800">02</span>
+                                <span className="text-4xl md:text-5xl font-black text-gray-800">02</span>
                                 <div>
-                                    <h3 className="text-2xl font-bold">PERFORMANCE CAMPAIGN</h3>
-                                    <span className="text-sm font-bold text-gray-500">Influencer Marketing</span>
+                                    <h3 className="text-xl md:text-2xl font-bold">PERFORMANCE CAMPAIGN</h3>
+                                    <span className="text-xs md:text-sm font-bold text-gray-500">Influencer Marketing</span>
                                 </div>
                             </div>
-                            <p className="text-xl font-bold mb-4">"섭외부터 성과 분석까지, 데이터로 증명하는 인플루언서 마케팅"</p>
-                            <p className="text-gray-400 mb-8 leading-relaxed">
+                            <p className="text-lg md:text-xl font-bold mb-4">"섭외부터 성과 분석까지, 데이터로 증명하는 인플루언서 마케팅"</p>
+                            <p className="text-sm md:text-base text-gray-400 mb-6 md:mb-8 leading-relaxed">
                                 단순 배포가 아닙니다. 틱스 커넥트가 기획, 섭외, 관리, 결과 분석까지 A to Z를 대행합니다.<br />
                                 <span className="text-sm text-gray-600 mt-2 block">Target: 제품 런칭, 시즌 이슈 등으로 확실한 바이럴 수치와 성과 리포트가 필요한 기업.</span>
                             </p>
@@ -157,21 +158,21 @@ const ServicePlans = () => {
                     </div>
 
                     {/* PLAN 03: VIBE DIRECTING */}
-                    <div className="bg-[#f9fafb] rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row gap-12 group hover:shadow-2xl transition-all duration-500 border border-gray-100 relative overflow-hidden">
+                    <div className="bg-[#f9fafb] rounded-3xl p-6 md:p-12 flex flex-col lg:flex-row gap-8 md:gap-12 group hover:shadow-2xl transition-all duration-500 border border-gray-100 relative overflow-hidden">
                         {/* Hover Video Background Effect (Simulated with scaling image/gradient for now, can be replaced with video) */}
                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-0 group-hover:opacity-20 transition-opacity duration-700 scale-110 group-hover:scale-100"></div>
                         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none"></div>
 
                         <div className="flex-1 relative z-10">
                             <div className="flex items-center gap-4 mb-6">
-                                <span className="text-5xl font-black text-gray-200">03</span>
+                                <span className="text-4xl md:text-5xl font-black text-gray-200">03</span>
                                 <div>
-                                    <h3 className="text-2xl font-bold">VIBE DIRECTING</h3>
-                                    <span className="text-sm font-bold text-gray-400">Offline Event</span>
+                                    <h3 className="text-xl md:text-2xl font-bold">VIBE DIRECTING</h3>
+                                    <span className="text-xs md:text-sm font-bold text-gray-400">Offline Event</span>
                                 </div>
                             </div>
-                            <p className="text-xl font-bold mb-4">"공간, 사운드, 조명. 전문가의 감각으로 설계하는 압도적 현장감"</p>
-                            <p className="text-gray-600 mb-8 leading-relaxed">
+                            <p className="text-lg md:text-xl font-bold mb-4">"공간, 사운드, 조명. 전문가의 감각으로 설계하는 압도적 현장감"</p>
+                            <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 leading-relaxed">
                                 성공적인 팝업과 파티를 위한 오프라인 공간 큐레이션 및 현장 연출 서비스입니다.<br />
                                 <span className="text-sm text-gray-400 mt-2 block">Target: 팝업스토어, 브랜드 런칭 파티, 프라이빗 애프터 파티, 기업 행사.</span>
                             </p>
@@ -196,21 +197,21 @@ const ServicePlans = () => {
                     </div>
 
                     {/* PLAN 04: CULTURE SYNC */}
-                    <div className="bg-gradient-to-br from-gray-900 to-black text-white rounded-3xl p-8 md:p-12 flex flex-col gap-12 relative overflow-hidden">
+                    <div className="bg-gradient-to-br from-gray-900 to-black text-white rounded-3xl p-6 md:p-12 flex flex-col gap-8 md:gap-12 relative overflow-hidden">
                         <div className="absolute top-0 right-0 p-32 bg-purple-500 blur-3xl opacity-10 rounded-full"></div>
                         <div className="absolute bottom-0 left-0 p-32 bg-blue-500 blur-3xl opacity-10 rounded-full"></div>
 
-                        <div className="flex flex-col lg:flex-row gap-12 relative z-10">
+                        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 relative z-10">
                             <div className="flex-1">
                                 <div className="flex items-center gap-4 mb-6">
-                                    <span className="text-5xl font-black text-gray-800">04</span>
+                                    <span className="text-4xl md:text-5xl font-black text-gray-800">04</span>
                                     <div>
-                                        <h3 className="text-2xl font-bold">CULTURE SYNC</h3>
-                                        <span className="text-sm font-bold text-gray-500">All-in-One Flagship</span>
+                                        <h3 className="text-xl md:text-2xl font-bold">CULTURE SYNC</h3>
+                                        <span className="text-xs md:text-sm font-bold text-gray-500">All-in-One Flagship</span>
                                     </div>
                                 </div>
-                                <p className="text-xl font-bold mb-4">"예산과 규모에 유연한, 온-오프라인 통합 마케팅의 완성"</p>
-                                <p className="text-gray-400 mb-6 leading-relaxed">
+                                <p className="text-lg md:text-xl font-bold mb-4">"예산과 규모에 유연한, 온-오프라인 통합 마케팅의 완성"</p>
+                                <p className="text-sm md:text-base text-gray-400 mb-6 leading-relaxed">
                                     소규모 프라이빗 행사부터 대형 페스티벌까지. 예산에 맞춰 인플루언서와 공간을 1:1 커스텀 설계합니다.<br />
                                     <span className="text-sm text-gray-600 mt-2 block">Target: 예산 효율을 극대화하고 싶은 브랜드 ~ 임팩트가 필요한 대형 프로젝트.</span>
                                 </p>

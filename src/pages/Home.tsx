@@ -19,14 +19,14 @@ const Home = () => {
                 <span className="inline-block py-1 px-3 rounded-full bg-gray-100 border border-gray-200 text-gray-800 text-xs font-bold mb-6 tracking-widest uppercase">
                     TIXX Connect
                 </span>
-                <h1 className="text-6xl md:text-[7rem] font-bold leading-[0.9] tracking-tight text-black mb-8">
+                <h1 className="text-4xl md:text-[7rem] font-bold leading-[1.1] md:leading-[0.9] tracking-tight text-black mb-6 md:mb-8">
                     Creative Minds, <br />
                     <span className="relative z-10 inline-block">
                         <span className="relative z-10">Automated System.</span>
-                        <span className="absolute bottom-2 left-0 right-0 h-4 md:h-8 bg-accent/60 -z-0"></span>
+                        <span className="absolute bottom-1 md:bottom-2 left-0 right-0 h-3 md:h-8 bg-accent/60 -z-0"></span>
                     </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 font-medium max-w-2xl leading-relaxed mb-12">
+                <p className="text-lg md:text-2xl text-gray-600 font-medium max-w-2xl leading-relaxed mb-8 md:mb-12">
                     개발자, 파티 디렉터, 브랜드 마케터가 만드는 <br className="hidden md:block" />
                     올인원 마케팅 솔루션.
                 </p>
