@@ -48,7 +48,7 @@ const Agency = () => {
                 >
                     <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">Who We Are</h1>
                     <p className="text-xl text-gray-500 leading-relaxed">
-                        TIXX Connect는 기술과 트렌드, 전략이 만나 탄생한 **올인원 마케팅 솔루션**입니다.<br />
+                        TIXX Connect는 기술과 트렌드, 전략이 만나 탄생한 <strong className="text-black">올인원 마케팅 솔루션</strong>입니다.<br />
                         단순한 대행사를 넘어, 자체 보유한 플랫폼 데이터를 기반으로 가장 확실한 성과를 만듭니다.
                     </p>
                 </motion.div>
@@ -73,7 +73,7 @@ const Agency = () => {
                         icon={TrendingUp}
                         title="Marketers"
                         description="브랜드 실무 경험이 풍부한 기획자."
-                        details={["Performance Marketing", "Brand Consulting", "Content Creation"]}
+                        details={["Influencer Marketing", "Brand Consulting", "Content Creation"]}
                         delay={0.3}
                     />
                 </div>
