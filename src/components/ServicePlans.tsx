@@ -176,7 +176,7 @@ const ServicePlans = () => {
                                 성공적인 팝업과 파티를 위한 오프라인 공간 큐레이션 및 현장 연출 서비스입니다.<br />
                                 <span className="text-sm text-gray-400 mt-2 block">Target: 팝업스토어, 브랜드 런칭 파티, 프라이빗 애프터 파티, 기업 행사.</span>
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                                 <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
                                     <MapPin size={24} className="mb-3 text-black" />
                                     <h4 className="font-bold text-sm mb-1">Venue Matching</h4>
@@ -184,8 +184,15 @@ const ServicePlans = () => {
                                 </div>
                                 <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
                                     <Music size={24} className="mb-3 text-black" />
-                                    <h4 className="font-bold text-sm mb-1">Content & Vibe</h4>
+                                    <h4 className="font-bold text-sm mb-1">Vibe Directing</h4>
                                     <p className="text-xs text-gray-500">DJ 라인업, 플레이리스트 디렉팅</p>
+                                </div>
+                                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                                    <div className="mb-3 text-black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>
+                                    </div>
+                                    <h4 className="font-bold text-sm mb-1">Content Production</h4>
+                                    <p className="text-xs text-gray-500">사진/영상 촬영 및 2차 활용 콘텐츠 제작</p>
                                 </div>
                                 <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
                                     <Speaker size={24} className="mb-3 text-black" />

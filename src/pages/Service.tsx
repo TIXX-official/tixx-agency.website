@@ -81,8 +81,8 @@ const Service = () => {
                                             <Globe className="text-accent" size={24} />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-xl">Global Reach</h4>
-                                            <p className="text-gray-400 text-sm">국내외 인플루언서 네트워크 보유</p>
+                                            <h4 className="font-bold text-xl">Proven Network</h4>
+                                            <p className="text-gray-400 text-sm">국내 인플루언서 네트워크 보유</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-center">
