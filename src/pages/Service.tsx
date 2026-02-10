@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ProgramPreview from '../components/ProgramPreview';
 import ServicePlans from '../components/ServicePlans';
 import { motion } from 'framer-motion';
-import { Globe, MapPin, CheckCircle, LucideIcon } from 'lucide-react';
+import { Globe, MapPin, CheckCircle, Smartphone as SmartPhone, Users, LucideIcon } from 'lucide-react';
 
 interface ServiceTabProps {
     active: boolean;
@@ -61,7 +61,7 @@ const Service = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
-                    className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center"
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-start"
                 >
                     {activeTab === 'online' ? (
                         <>
@@ -72,7 +72,31 @@ const Service = () => {
                                     자체 보유한 인플루언서 DB를 통해 브랜드 핏에 맞는 최적의 인플루언서를 매칭합니다.
                                     수작업으로 이루어지던 섭외 과정을 자동화하여 마케팅 효율을 극대화하세요.
                                 </p>
-                                <ul className="space-y-6">
+
+                                {/* Visual Feature Box */}
+                                <div className="bg-black text-white p-8 rounded-3xl mb-8 relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 w-40 h-40 bg-accent/20 rounded-full blur-[60px] translate-x-1/2 -translate-y-1/2" />
+                                    <div className="flex gap-4 items-center mb-6">
+                                        <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                            <Globe className="text-accent" size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-xl">Global Reach</h4>
+                                            <p className="text-gray-400 text-sm">국내외 인플루언서 네트워크 보유</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 items-center">
+                                        <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                            <SmartPhone className="text-accent" size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-xl">App Integration</h4>
+                                            <p className="text-gray-400 text-sm">TIXX 앱과 연동된 캠페인 관리</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul className="space-y-6 mb-32 md:mb-48">
                                     {[
                                         { title: "Smart Filtering", desc: "금액, 연령, 팔로워 성비, 카테고리별 정밀 타겟 검색" },
                                         { title: "Batch Messaging", desc: "제안서 대량 발송 및 수신 확인 트래킹 시스템" },
@@ -90,7 +114,7 @@ const Service = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="order-1 lg:order-2">
+                            <div className="order-1 lg:order-2 flex flex-col gap-6">
                                 <ProgramPreview type="influencer" />
                             </div>
                         </>
@@ -104,6 +128,29 @@ const Service = () => {
                                     브랜드의 아이덴티티를 오프라인 공간에 완벽하게 구현합니다.
                                     장소 섭외부터 공간 연출, 운영, 그리고 데이터 리포트까지 원스톱으로 제공합니다.
                                 </p>
+
+                                {/* Visual Feature Box */}
+                                <div className="bg-gray-100 p-8 rounded-3xl mb-8 relative overflow-hidden">
+                                    <div className="flex gap-4 items-center mb-6">
+                                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                            <MapPin className="text-black" size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-xl text-black">Venue Curation</h4>
+                                            <p className="text-gray-500 text-sm">서울 주요 핫플레이스 DB 보유</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 items-center">
+                                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                            <Users className="text-black" size={24} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-xl text-black">Crowd Management</h4>
+                                            <p className="text-gray-500 text-sm">전문 현장 운영팀 파견</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <ul className="space-y-6">
                                     {[
                                         { title: "Venue Filter System", desc: "지역, 수용인원, 무드별 최적의 베뉴 즉시 매칭" },
@@ -122,7 +169,16 @@ const Service = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="order-1 lg:order-2">
+                            <div className="order-1 lg:order-2 flex flex-col gap-6">
+                                <div className="bg-black text-white rounded-[2.5rem] p-8 flex flex-col justify-end min-h-[400px] relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-[url('/assets/archive/getixx-poster.jpg')] bg-cover bg-center opacity-60"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                                    <div className="relative z-10">
+                                        <span className="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Reference</span>
+                                        <h3 className="text-3xl font-bold">Real Experience</h3>
+                                        <p className="text-gray-300 text-sm mt-2">수많은 브랜드와 함께한 성공적인 오프라인 이벤트</p>
+                                    </div>
+                                </div>
                                 <ProgramPreview type="venue" />
                             </div>
                         </>

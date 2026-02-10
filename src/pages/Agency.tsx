@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Code, Sparkles, TrendingUp, Smartphone, Database, Zap, LucideIcon } from 'lucide-react';
+import ConnectCarousel from '../components/ConnectCarousel';
 
 interface TeamCardProps {
     icon: LucideIcon;
@@ -58,23 +59,34 @@ const Agency = () => {
                         icon={Code}
                         title="Developers"
                         description="TIXX 앱 개발 및 자동화 솔루션 구축."
-                        details={["자체 플랫폼 개발 및 유지보수", "마케팅 자동화 툴 구축", "데이터 분석 시스템 설계"]}
+                        details={["React, Next.js, React Native", "AWS Infra Structure", "Data Analysis"]}
                         delay={0.1}
                     />
                     <TeamCard
                         icon={Sparkles}
                         title="Vibe Directors"
                         description="파티 및 이벤트 기획/운영 전문가."
-                        details={["오프라인 행사 총괄 기획", "인플루언서 네트워킹", "현장 운영 및 경험 설계"]}
+                        details={["Space Directing", "On-site Operation", "Artist Booking"]}
                         delay={0.2}
                     />
                     <TeamCard
                         icon={TrendingUp}
                         title="Marketers"
                         description="브랜드 실무 경험이 풍부한 기획자."
-                        details={["퍼포먼스/브랜드 마케팅 전략", "SNS 콘텐츠 기획", "KPI 기반 성과 분석"]}
+                        details={["Performance Marketing", "Brand Consulting", "Content Creation"]}
                         delay={0.3}
                     />
+                </div>
+
+                {/* References Section */}
+                <div className="mb-32">
+                    <div className="text-center mb-12">
+                        <span className="text-accent font-bold tracking-widest text-sm uppercase">References</span>
+                        <h2 className="text-3xl md:text-5xl font-bold mt-2">Our Works</h2>
+                    </div>
+                    <div className="w-full">
+                        <ConnectCarousel />
+                    </div>
                 </div>
 
                 {/* Synergy Section */}
