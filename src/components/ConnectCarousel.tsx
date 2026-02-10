@@ -7,7 +7,7 @@ const references = [
         src: '/assets/archive/dirtixx-poster.mp4',
         title: 'DIRTIXX',
         category: 'Club Party',
-        year: '2024',
+        year: '2025',
         client: 'Dirty Rose Club'
     },
     {
@@ -16,7 +16,7 @@ const references = [
         src: '/assets/archive/nastixx-poster.mp4',
         title: 'NASTIXX',
         category: 'Brand Party',
-        year: '2024',
+        year: '2025',
         client: 'Jägermeister'
     },
     {
@@ -25,7 +25,7 @@ const references = [
         src: '/assets/archive/pgmntixx-poster.mp4',
         title: 'PGMNTIXX',
         category: 'Exhibition Party',
-        year: '2023',
+        year: '2025',
         client: 'Pigment Public'
     },
     {
@@ -34,7 +34,7 @@ const references = [
         src: '/assets/archive/getixx-poster.jpg',
         title: 'GETIXX',
         category: 'Lounge Party',
-        year: '2024',
+        year: '2025',
         client: 'Get All Right'
     }
 ];
