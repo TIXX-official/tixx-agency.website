@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Copy, Check, Mail, Phone, MapPin, Instagram } from 'lucide-react';
+import { Copy, Check, Mail } from 'lucide-react';
 
 const Contact = () => {
     const [copied, setCopied] = useState(false);
-    const email = "tixxofficial@tixx.im";
+    const email = "connect@tixx.im";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(email);
@@ -56,26 +56,7 @@ const Contact = () => {
                         </button>
                     </div>
 
-                    <div className="mt-12 pt-12 border-t border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div>
-                            <h4 className="font-bold text-black flex items-center gap-2 mb-2">
-                                <Phone size={18} /> Call
-                            </h4>
-                            <p className="text-gray-500">02-1234-5678</p>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-black flex items-center gap-2 mb-2">
-                                <MapPin size={18} /> Visit
-                            </h4>
-                            <p className="text-gray-500">Seoul, Gangnam-gu, Teheran-ro</p>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-black flex items-center gap-2 mb-2">
-                                <Instagram size={18} /> Social
-                            </h4>
-                            <a href="#" className="text-gray-500 hover:text-black">@tixx_official</a>
-                        </div>
-                    </div>
+
                 </motion.div>
             </div>
         </div>
