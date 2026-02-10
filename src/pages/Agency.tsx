@@ -81,7 +81,7 @@ const Agency = () => {
                 {/* References Section */}
                 <div className="mb-32">
                     <div className="text-center mb-12">
-                        <span className="text-accent font-bold tracking-widest text-sm uppercase">References</span>
+                        <span className="text-gray-500 font-bold tracking-widest text-sm uppercase">References</span>
                         <h2 className="text-3xl md:text-5xl font-bold mt-2">Our Works</h2>
                     </div>
                     <div className="w-full">

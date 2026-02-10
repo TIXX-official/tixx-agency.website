@@ -186,6 +186,26 @@ const Home = () => {
 
             {/* Partners Section */}
             <Partners />
+
+            {/* TIXX App CTA Section */}
+            <div className="w-full bg-black text-white py-20 px-8 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full bg-accent/5 opacity-50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-black to-black"></div>
+                <div className="relative z-10 max-w-2xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Looking for TIXX App?</h2>
+                    <p className="text-gray-400 mb-8">
+                        이벤트 탐색, 티켓 예매, 그리고 간편한 입장까지.<br />
+                        TIXX 앱에서 새로운 문화를 경험하세요.
+                    </p>
+                    <a
+                        href="https://tixx.im"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors"
+                    >
+                        Go to TIXX App <ArrowRight size={18} />
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };

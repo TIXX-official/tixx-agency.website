@@ -45,7 +45,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <div className="hidden md:flex space-x-8 text-sm font-semibold tracking-wide items-center">
                     {['AGENCY', 'SERVICE', 'CONTACT'].map((item) => {
                         const path = `/${item.toLowerCase()}`;
                         return (
@@ -65,6 +65,14 @@ const Navbar = () => {
                             </Link>
                         )
                     })}
+                    <a
+                        href="https://tixx.im"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="ml-4 px-5 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-all text-xs font-bold flex items-center"
+                    >
+                        TIXX APP ↗
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -87,42 +95,44 @@ const Navbar = () => {
                         />
                     </div>
                 </button>
-            </motion.nav>
+            </motion.nav >
 
             {/* Mobile Fullscreen Menu */}
             <AnimatePresence>
-                {mobileMenuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3 }}
-                        className="fixed inset-0 z-40 bg-white pt-32 px-6 md:hidden"
-                    >
-                        <div className="flex flex-col gap-8 text-3xl font-bold">
-                            {['AGENCY', 'SERVICE', 'CONTACT'].map((item, i) => (
-                                <motion.div
-                                    key={item}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: i * 0.1 }}
-                                >
-                                    <Link
-                                        to={`/${item.toLowerCase()}`}
-                                        className="block border-b border-gray-100 pb-4"
-                                        onClick={() => setMobileMenuOpen(false)}
+                {
+                    mobileMenuOpen && (
+                        <motion.div
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            className="fixed inset-0 z-40 bg-white pt-32 px-6 md:hidden"
+                        >
+                            <div className="flex flex-col gap-8 text-3xl font-bold">
+                                {['AGENCY', 'SERVICE', 'CONTACT'].map((item, i) => (
+                                    <motion.div
+                                        key={item}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: i * 0.1 }}
                                     >
-                                        <span className={`flex items-center justify-between ${isActive(`/${item.toLowerCase()}`) ? 'text-accent' : 'text-black'}`}>
-                                            {item}
-                                            {isActive(`/${item.toLowerCase()}`) && <span className="text-sm bg-black text-white px-2 py-1 rounded-full">Active</span>}
-                                        </span>
-                                    </Link>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                                        <Link
+                                            to={`/${item.toLowerCase()}`}
+                                            className="block border-b border-gray-100 pb-4"
+                                            onClick={() => setMobileMenuOpen(false)}
+                                        >
+                                            <span className={`flex items-center justify-between ${isActive(`/${item.toLowerCase()}`) ? 'text-accent' : 'text-black'}`}>
+                                                {item}
+                                                {isActive(`/${item.toLowerCase()}`) && <span className="text-sm bg-black text-white px-2 py-1 rounded-full">Active</span>}
+                                            </span>
+                                        </Link>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    )
+                }
+            </AnimatePresence >
         </>
     );
 };
